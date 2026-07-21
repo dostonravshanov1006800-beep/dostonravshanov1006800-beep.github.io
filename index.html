@@ -5,80 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Достон — Праздники + ИИ</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .floating {
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-25px); }
-        }
-        .spin-slow {
-            animation: spin 20s linear infinite;
-        }
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-    </style>
 </head>
 <body class="bg-zinc-950 text-white">
-    <section class="min-h-screen bg-gradient-to-br from-violet-600 via-fuchsia-600 to-pink-600 flex items-center justify-center relative overflow-hidden">
-        <div class="absolute text-8xl floating top-20 left-20">🎉</div>
-        <div class="absolute text-8xl floating top-40 right-32 delay-300">💫</div>
-        <div class="absolute text-8xl floating bottom-32 left-40 delay-700">🤖</div>
-        <div class="absolute text-8xl floating bottom-40 right-20 delay-1000">✨</div>
-
-        <div class="text-center z-10">
+    <!-- Hero с твоим фото -->
+    <section class="min-h-screen bg-cover bg-center flex items-center justify-center relative" 
+             style="background-image: url('https://i.imgur.com/0sBhP.jpg');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 text-center px-6">
             <h1 class="text-7xl font-bold mb-6">Достон</h1>
-            <p class="text-4xl mb-10">Праздники • Искусственный интеллект</p>
+            <p class="text-4xl mb-10">Праздники • Искусственный интеллект • Кулинария</p>
             <div class="flex justify-center gap-6">
-                <a href="#events" class="bg-white text-black px-10 py-5 rounded-2xl text-xl font-medium">Праздники</a>
-                <a href="#ai" class="border border-white px-10 py-5 rounded-2xl text-xl font-medium">ИИ</a>
+                <a href="#contact" class="bg-white text-black px-10 py-5 rounded-2xl text-xl font-medium">Связаться</a>
             </div>
         </div>
     </section>
 
-    <!-- Праздники -->
-    <section id="events" class="py-24 bg-zinc-900">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl text-center mb-16">Праздники под ключ</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-zinc-800 p-10 rounded-3xl text-center floating">
-                    <div class="text-7xl mb-6">🎂</div>
-                    <h3 class="text-3xl">Дни рождения</h3>
-                </div>
-                <div class="bg-zinc-800 p-10 rounded-3xl text-center floating" style="animation-delay: 1s;">
-                    <div class="text-7xl mb-6">💒</div>
-                    <h3 class="text-3xl">Свадьбы</h3>
-                </div>
-                <div class="bg-zinc-800 p-10 rounded-3xl text-center floating" style="animation-delay: 2s;">
-                    <div class="text-7xl mb-6">🎉</div>
-                    <h3 class="text-3xl">Корпоративы</h3>
-                </div>
-            </div>
-        </div>
+    <section class="py-24 bg-zinc-900 text-center">
+        <h2 class="text-5xl mb-16">Chef Cooking AI</h2>
+        <p class="text-2xl max-w-2xl mx-auto">Умный ИИ-шеф + организация праздников</p>
     </section>
 
-    <!-- ИИ -->
-    <section id="ai" class="py-24 bg-black">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl text-center mb-16">Искусственный интеллект</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-zinc-900 p-10 rounded-3xl text-center">
-                    <div class="text-7xl mb-6 spin-slow">🤖</div>
-                    <h3 class="text-3xl">Чат-боты и ассистенты</h3>
-                </div>
-                <div class="bg-zinc-900 p-10 rounded-3xl text-center">
-                    <div class="text-7xl mb-6 spin-slow">🖼</div>
-                    <h3 class="text-3xl">Генерация изображений</h3>
-                </div>
-            </div>
-        </div>
+    <section id="contact" class="py-24 bg-gradient-to-br from-violet-600 to-pink-600 text-center">
+        <h2 class="text-5xl mb-10">Напишите мне</h2>
+        <p class="text-2xl mb-8">+7 978 066-80-00</p>
+        <a href="https://t.me/dostonxoja" class="bg-white text-black px-12 py-6 rounded-3xl text-2xl">Telegram</a>
     </section>
-
-    <footer class="py-12 text-center bg-black">
-        <p>© 2026 Достон — Праздники и ИИ</p>
-    </footer>
 </body>
 </html>
