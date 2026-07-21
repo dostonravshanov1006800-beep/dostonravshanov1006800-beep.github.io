@@ -3,23 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Достон — Праздники под ключ ✨</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; }
+        header {
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             color: white;
-            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
-        h1 { font-size: 3em; }
-        p { font-size: 1.4em; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 4.5em; margin-bottom: 15px; }
+        .tagline { font-size: 1.8em; margin-bottom: 40px; }
+        .btn {
+            background: white; color: #6a11cb; padding: 18px 50px;
+            font-size: 1.3em; border-radius: 50px; text-decoration: none;
+            font-weight: 600; box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 60px auto 0;
+        }
+        .card {
+            background: white;
+            padding: 45px 30px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(106,17,203,0.15);
+        }
+        .emoji { font-size: 4.5em; margin-bottom: 25px; }
     </style>
 </head>
 <body>
-    <h1>Привет! 👋</h1>
-    <p>Это мой первый сайт на GitHub</p>
-    <p>Работает бесплатно!</p>
+    <header>
+        <div>
+            <h1>Достон</h1>
+            <p class="tagline">Праздники, которые запоминаются навсегда ✨</p>
+            <a href="#contact" class="btn">Заказать мероприятие</a>
+        </div>
+    </header>
+
+    <section style="padding:100px 20px; background:#f8f4ff; text-align:center;">
+        <h2 style="font-size:2.8em; margin-bottom:50px;">Мои услуги</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="emoji">🎂</div>
+                <h3>Дни рождения</h3>
+                <p>Яркие и незабываемые праздники для детей и взрослых</p>
+            </div>
+            <div class="card">
+                <div class="emoji">💒</div>
+                <h3>Свадьбы</h3>
+                <p>Полная организация вашего самого важного дня</p>
+            </div>
+            <div class="card">
+                <div class="emoji">🎉</div>
+                <h3>Корпоративы и юбилеи</h3>
+                <p>Стильно, весело и на высшем уровне</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background:linear-gradient(135deg,#6a11cb,#2575fc); color:white; padding:120px 20px; text-align:center;">
+        <h2 style="font-size:3em;">Готовы к волшебству?</h2>
+        <p style="font-size:1.6em; margin:40px 0;">📱 +7 978 066-80-00</p>
+        <a href="https://t.me/dostonxoja" class="btn" style="background:white; color:#6a11cb;">Написать в Telegram</a>
+    </section>
+
+    <footer style="text-align:center; padding:50px; background:#111; color:#aaa;">
+        © 2026 Достон — Организация мероприятий премиум-класса
+    </footer>
 </body>
 </html>
