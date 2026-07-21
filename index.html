@@ -3,38 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Достон</title>
+    <title>Равшанов Достонхожа | IMANUM</title>
+    <meta name="description" content="Равшанов Достонхожа — специалист по рассрочке в IMANUM">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body class="bg-black text-white min-h-screen flex items-center justify-center">
-    <div class="text-center px-6 max-w-md w-full">
-        <h1 class="text-6xl font-bold mb-16">Достон</h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap');
         
-        <div class="space-y-6">
-            <!-- Telegram -->
-            <a href="https://t.me/dostonxoja" 
-               class="flex items-center justify-center gap-4 bg-[#229ED9] hover:bg-[#1a8ac4] py-6 rounded-2xl text-2xl font-medium transition">
-                <i class="fab fa-telegram-plane text-4xl"></i>
-                <span>Telegram</span>
-            </a>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #0c0a08;
+            color: #f5f0e8;
+        }
+        
+        h1, h2 { 
+            font-family: 'Space Grotesk', sans-serif; 
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 220, 150, 0.12);
+        }
+        
+        .neon {
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+        }
 
-            <!-- Instagram -->
-            <a href="https://instagram.com/dostonxoja._" 
-               class="flex items-center justify-center gap-4 bg-gradient-to-r from-[#f56040] via-[#c13584] to-[#405de6] hover:brightness-110 py-6 rounded-2xl text-2xl font-medium transition">
-                <i class="fab fa-instagram text-4xl"></i>
-                <span>Instagram</span>
-            </a>
+        /* Красивый логотип IMANUM с тёплым переливом */
+        .imanum-logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.35em;
+            background: linear-gradient(90deg, #f5d78e, #e8c56a, #d4af37, #f5d78e);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 7s linear infinite;
+        }
 
-            <!-- TikTok -->
-            <a href="https://tiktok.com/@ravshanov_dostonxoja" 
-               class="flex items-center justify-center gap-4 bg-black border border-white/50 hover:bg-white/10 py-6 rounded-2xl text-2xl font-medium transition">
-                <i class="fab fa-tiktok text-4xl"></i>
-                <span>TikTok</span>
-            </a>
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .lang-btn.active {
+            background: #d4af37;
+            color: #1a150f;
+        }
+
+        /* Тёплый градиент фона */
+        .warm-bg {
+            background: radial-gradient(ellipse at top, #2a1f12 0%, #0c0a08 60%);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Верхняя панель -->
+    <div class="fixed top-0 left-0 right-0 z-50 glass border-b border-yellow-900/20">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- Языки -->
+            <div class="flex gap-2">
+                <button onclick="setLang('ru')" id="btn-ru" class="lang-btn active px-3 py-1.5 rounded-full text-sm glass transition">РУ</button>
+                <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1.5 rounded-full text-sm glass transition">EN</button>
+                <button onclick="setLang('uz')" id="btn-uz" class="lang-btn px-3 py-1.5 rounded-full text-sm glass transition">UZ</button>
+            </div>
+
+            <!-- Скачать приложение -->
+            <div class="flex gap-2">
+                <a href="https://apps.apple.com/app/imanum/id1625307273" target="_blank"
+                   class="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-2xl text-sm transition border border-yellow-700/30">
+                    <i class="fab fa-apple text-lg"></i>
+                    <span class="hidden sm:inline">App Store</span>
+                </a>
+                
+                <a href="https://play.google.com/store/apps/details?id=uz.iman.iman_installments" target="_blank"
+                   class="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-2xl text-sm transition border border-yellow-700/30">
+                    <i class="fab fa-google-play text-lg"></i>
+                    <span class="hidden sm:inline">Play Market</span>
+                </a>
+            </div>
         </div>
-
-        <p class="mt-16 text-2xl text-zinc-400">+998 97 806 68 00</p>
     </div>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 warm-bg">
+        <div class="absolute inset-0 bg-gradient-to-b from-amber-950/40 to-transparent"></div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            
+            <div class="mb-14">
+                <div class="imanum-logo text-5xl md:text-7xl mb-3">
+                    IMANUM
+                </div>
+                <div class="text-xs text-amber-200/70 tracking-[0.6em] uppercase">
+                    Ethical FinTech
+                </div>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-amber-50">Равшанов Достонхожа</h1>
+            <p class="text-2xl md:text-3xl text-amber-200/90 mb-12" id="subtitle">Специалист по рассрочке • IMANUM</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+998978066800" class="bg-amber-400 text-amber-950 px-10 py-5 rounded-2xl font-medium text-xl flex items-center justify-center gap-3 hover:scale-105 transition shadow-lg shadow-amber-900/40">
+                    <i class="fas fa-phone"></i> Позвонить
+                </a>
+                <a href="#contact" class="glass px-10 py-5 rounded-2xl font-medium text-xl hover:bg-white/5 transition border border-amber-700/30">
+                    Контакты
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center text-amber-100" id="about-title">Обо мне</h2>
+            <div class="glass rounded-3xl p-10 md:p-14 neon">
+                <p class="text-lg leading-relaxed text-amber-50/80" id="about-text">
+                    Меня зовут Равшанов Достонхожа. Уже более 1 года я работаю в компании IMANUM в отделе рассрочки. Помогаю клиентам оформлять покупки в рассрочку на выгодных и прозрачных условиях.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company -->
+    <section class="py-24 px-6 bg-black/40">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center text-amber-100" id="company-title">О компании IMANUM</h2>
+            <div class="glass rounded-3xl p-10 md:p-14 neon">
+                <p class="text-lg leading-relaxed text-amber-50/80" id="company-text">
+                    IMANUM — ведущая FinTech-экосистема Узбекистана, работающая по принципам исламских и этических финансов. Компания предлагает прозрачные инвестиции, рассрочку без процентов и современное мобильное приложение. Более 1 миллиона пользователей доверяют IMANUM.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-amber-100" id="contact-title">Связаться со мной</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <a href="tel:+998978066800" class="glass rounded-3xl p-8 hover:bg-white/5 transition neon">
+                    <i class="fas fa-phone text-4xl mb-5 text-amber-400"></i>
+                    <div class="font-medium" id="phone-label">Позвонить</div>
+                    <div class="text-amber-300">+998 97 806 68 00</div>
+                </a>
+                
+                <a href="https://t.me/dostonxoja" target="_blank" class="glass rounded-3xl p-8 hover:bg-white/5 transition neon">
+                    <i class="fab fa-telegram-plane text-4xl mb-5 text-sky-400"></i>
+                    <div class="font-medium">Telegram</div>
+                    <div class="text-sm text-amber-100/60">@dostonxoja</div>
+                </a>
+                
+                <a href="https://instagram.com/dostonxoja._" target="_blank" class="glass rounded-3xl p-8 hover:bg-white/5 transition neon">
+                    <i class="fab fa-instagram text-4xl mb-5 text-pink-400"></i>
+                    <div class="font-medium">Instagram</div>
+                    <div class="text-sm text-amber-100/60">@dostonxoja._</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-xs text-amber-900/60">
+        © 2026 Равшанов Достонхожа • IMANUM
+    </footer>
+
+    <script>
+        const translations = {
+            ru: {
+                subtitle: "Специалист по рассрочке • IMANUM",
+                aboutTitle: "Обо мне",
+                aboutText: "Меня зовут Равшанов Достонхожа. Уже более 1 года я работаю в компании IMANUM в отделе рассрочки. Помогаю клиентам оформлять покупки в рассрочку на выгодных и прозрачных условиях.",
+                companyTitle: "О компании IMANUM",
+                companyText: "IMANUM — ведущая FinTech-экосистема Узбекистана, работающая по принципам исламских и этических финансов. Компания предлагает прозрачные инвестиции, рассрочку без процентов и современное мобильное приложение. Более 1 миллиона пользователей доверяют IMANUM.",
+                contactTitle: "Связаться со мной",
+                phoneLabel: "Позвонить"
+            },
+            en: {
+                subtitle: "Installment Specialist • IMANUM",
+                aboutTitle: "About me",
+                aboutText: "My name is Ravshanov Dostonxoja. I have been working at IMANUM for more than 1 year in the installment department. I help clients arrange purchases on favorable and transparent terms.",
+                companyTitle: "About IMANUM",
+                companyText: "IMANUM is a leading FinTech ecosystem in Uzbekistan operating on the principles of Islamic and ethical finance. The company offers transparent investments, interest-free installments and a modern mobile application. Over 1 million users trust IMANUM.",
+                contactTitle: "Contact me",
+                phoneLabel: "Call"
+            },
+            uz: {
+                subtitle: "Bo'lib to'lash mutaxassisi • IMANUM",
+                aboutTitle: "Men haqimda",
+                aboutText: "Mening ismim Ravshanov Dostonxoja. Men IMANUM kompaniyasida 1 yildan ortiq vaqt davomida bo'lib to'lash bo'limida ishlayman. Mijozlarga qulay va shaffof shartlar asosida bo'lib to'lashni rasmiylashtirishda yordam beraman.",
+                companyTitle: "IMANUM kompaniyasi haqida",
+                companyText: "IMANUM — O'zbekistondagi yetakchi FinTech ekotizimi bo'lib, islomiy va axloqiy moliya tamoyillari asosida ishlaydi. Kompaniya shaffof investitsiyalar, foizsiz bo'lib to'lash va zamonaviy mobil ilovani taklif etadi. 1 milliondan ortiq foydalanuvchi IMANUM ga ishonadi.",
+                contactTitle: "Men bilan bog'lanish",
+                phoneLabel: "Qo'ng'iroq"
+            }
+        };
+
+        function setLang(lang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + lang).classList.add('active');
+
+            const t = translations[lang];
+            document.getElementById('subtitle').textContent = t.subtitle;
+            document.getElementById('about-title').textContent = t.aboutTitle;
+            document.getElementById('about-text').textContent = t.aboutText;
+            document.getElementById('company-title').textContent = t.companyTitle;
+            document.getElementById('company-text').textContent = t.companyText;
+            document.getElementById('contact-title').textContent = t.contactTitle;
+            document.getElementById('phone-label').textContent = t.phoneLabel;
+        }
+
+        setLang('ru');
+    </script>
 </body>
-</html>
+    </html>
